@@ -1,1 +1,18 @@
-/* component styles */
+/* Cover Image */
+.cover-img {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+.img-details {
+  position: fixed;
+  bottom: 2%;
+  left: 3%;
+  max-width: 25%;
+}
+
+/* Current Time */
+.timer {
+  font-size: 6rem;
+}
