@@ -47,3 +47,20 @@
   outline: transparent;
   color: var(--text-light);
 }
+/* Weather */
+.weather-container {
+  position: fixed;
+  right: 1%;
+  top: 1%;
+  display: flex;
+  gap: 1rem;
+}
+
+/* Quote */
+.quote-container {
+  position: fixed;
+  bottom: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 70%;
+}
