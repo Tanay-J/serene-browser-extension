@@ -1,1 +1,26 @@
-/* css variables */
+:root {
+  --text-white: white;
+  --text-light: white;
+  --text-black: black;
+  --text-dark: #143109;
+  --gray-light: #c5c5c5;
+  --gray: gray;
+}
+.dark-text {
+  --text-light: #373f51;
+}
+.light-green-text {
+  --text-light: #84e296;
+}
+.red-text {
+  --text-light: #f50035;
+}
+.gray-text {
+  --text-light: #cee0dc;
+}
+.blue-text {
+  --text-light: #5762d5;
+}
+.light-blue-text {
+  --text-light: #81c4ee;
+}

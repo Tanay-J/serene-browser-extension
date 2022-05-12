@@ -1,1 +1,145 @@
-/* utility classes */
+ul {
+  margin: 0;
+}
+
+/* flex */
+.flex {
+  display: flex;
+}
+.flex-col {
+  flex-direction: column;
+}
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-space-bet {
+  justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 1rem;
+}
+
+/* text-styling */
+.bg-primary {
+  background-color: var(--primary-light);
+}
+.bg-white {
+  background-color: white;
+}
+.bg-dark {
+  background-color: #373f51;
+}
+.bg-light-green {
+  background-color: #84e296;
+}
+.bg-red {
+  background-color: #f50035;
+}
+.bg-gray {
+  background-color: #cee0dc;
+}
+.bg-blue {
+  background-color: #5762d5;
+}
+.bg-light-blue {
+  background-color: #81c4ee;
+}
+.text-primary {
+  color: var(--primary-light);
+}
+
+.text-white {
+  color: var(--text-white);
+}
+
+.text-light {
+  color: var(--text-light);
+}
+
+.text-dark {
+  color: var(--text-dark);
+}
+
+.text-black {
+  color: var(--text-black);
+}
+
+.text-gray {
+  color: var(--gray-dark);
+}
+
+.text-danger {
+  color: var(--danger);
+}
+
+.text-success {
+  color: var(--success);
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-xs {
+  font-size: 12px;
+}
+.text-s {
+  font-size: 20px;
+}
+
+/* Buttons */
+.btn {
+  cursor: pointer;
+  border-radius: 5rem;
+}
+.btn-round {
+  border-radius: 50%;
+  padding: 12px;
+}
+.btn-float {
+  height: 4rem;
+  width: 4rem;
+}
+.btn-gradient {
+  border: none;
+  background: hsla(29, 98%, 57%, 1);
+  background: linear-gradient(
+    0deg,
+    hsla(29, 98%, 57%, 1) 0%,
+    hsla(344, 97%, 56%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    0deg,
+    hsla(29, 98%, 57%, 1) 0%,
+    hsla(344, 97%, 56%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    0deg,
+    hsla(29, 98%, 57%, 1) 0%,
+    hsla(344, 97%, 56%, 1) 100%
+  );
+}
+
+/* Other */
+.card-shadow {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.pointer {
+  cursor: pointer;
+}
+.border-transparent {
+  border: transparent;
+}
+.outline-white {
+  border: 1px solid var(--text-light);
+  color: var(--text-light);
+}
