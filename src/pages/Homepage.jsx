@@ -1,4 +1,4 @@
-import { CoverImage, CurrentTime, Quote, Weather } from "../components";
+import { CoverImage, CurrentTime, Quote, UserDetails, Weather } from "../components";
 
 const Homepage = () => {
   return (
