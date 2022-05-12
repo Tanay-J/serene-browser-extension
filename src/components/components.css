@@ -16,3 +16,34 @@
 .timer {
   font-size: 6rem;
 }
+
+/* UserDetails */
+.user-input {
+  display: block;
+  background: transparent;
+  color: var(--text-light);
+  outline: transparent;
+  border: transparent;
+  border-bottom: 0.5px solid var(--text-light);
+  width: 50%;
+}
+/* MainFocus */
+.task-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.task-input {
+  width: 70%;
+  border: none;
+  outline: transparent;
+  background: rgba(132, 131, 131, 0.5);
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.edit-input {
+  background: rgba(132, 131, 131, 0.5);
+  border: none;
+  outline: transparent;
+  color: var(--text-light);
+}
