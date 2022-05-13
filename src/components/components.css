@@ -88,3 +88,19 @@
 .list-item {
   width: 80%;
 }
+
+/* sidebar */
+.sidebar-wrapper {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+}
+.sidebar-container {
+  width: 23rem;
+  background: rgba(47, 47, 47, 0.5);
+  z-index: 3;
+}
+.outline-white {
+  border: 1px solid var(--text-light);
+  color: var(--text-light);
+}

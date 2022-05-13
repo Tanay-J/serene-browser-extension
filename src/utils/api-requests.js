@@ -1,12 +1,12 @@
 import axios from "axios";
 
-export const getCoverImage = async (setImageData) => {
+export const getCoverImage = async (category, setImageData) => {
   try {
     const {
       data: { urls, location, description },
     } = await axios.get(
       `https://api.unsplash.com/photos/random/?client_id=${process.env.REACT_APP_UNSPLASH_API_KEY}`,
-      { params: { orientation: "landscape" } }
+      { params: { query: { category }, orientation: "landscape" } }
     );
 
     setImageData({

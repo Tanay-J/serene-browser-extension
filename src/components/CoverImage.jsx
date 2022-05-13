@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { useSettings } from "../contexts/settings-context";
 import { getCoverImage } from "../utils/api-requests";
 
 const CoverImage = () => {
@@ -9,11 +10,18 @@ const CoverImage = () => {
   };
   const [imageData, setImageData] = useState(initialData);
   const { url, location, description } = imageData;
+  const {
+    settings: { imageCategory, imageRefreshTime },
+  } = useSettings();
 
   useEffect(() => {
-    getCoverImage(setImageData);
-    setInterval(() => getCoverImage(setImageData), 1800000);
-  }, []);
+    getCoverImage(imageCategory, setImageData);
+    const timer = setInterval(
+      () => getCoverImage(imageCategory, setImageData),
+      imageRefreshTime
+    );
+    return () => clearInterval(timer);
+  }, [imageCategory, imageRefreshTime]);
 
   return (
     <div>
