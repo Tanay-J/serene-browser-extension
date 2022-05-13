@@ -1,4 +1,11 @@
-import { CoverImage, CurrentTime, Quote, UserDetails, Weather } from "../components";
+import {
+  CoverImage,
+  CurrentTime,
+  Quote,
+  Todo,
+  UserDetails,
+  Weather,
+} from "../components";
 
 const Homepage = () => {
   return (
@@ -10,6 +17,7 @@ const Homepage = () => {
           <UserDetails />
         </section>
         <Weather />
+        <Todo />
         <Quote />
       </div>
     </div>
