@@ -1,4 +1,4 @@
-import { CoverImage, CurrentTime, MainFocus, UserDetails } from "../components";
+import { CoverImage, CurrentTime, Quote, UserDetails, Weather } from "../components";
 
 const Homepage = () => {
   return (
@@ -9,6 +9,8 @@ const Homepage = () => {
           <CurrentTime />
           <UserDetails />
         </section>
+        <Weather />
+        <Quote />
       </div>
     </div>
   );
