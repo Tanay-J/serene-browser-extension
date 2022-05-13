@@ -64,3 +64,43 @@
   transform: translateX(-50%);
   max-width: 70%;
 }
+
+/* todo */
+.todo-wrapper {
+  position: fixed;
+  bottom: 2%;
+  right: 1%;
+}
+.todo-container {
+  position: absolute;
+  right: 100%;
+  bottom: 100%;
+  width: 20rem;
+  background: rgba(47, 47, 47, 0.5);
+}
+.todo-input {
+  background: rgba(47, 47, 47, 0.5);
+  border: none;
+  outline: transparent;
+  color: var(--text-light);
+  width: 80%;
+}
+.list-item {
+  width: 80%;
+}
+
+/* sidebar */
+.sidebar-wrapper {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+}
+.sidebar-container {
+  width: 23rem;
+  background: rgba(47, 47, 47, 0.5);
+  z-index: 3;
+}
+.outline-white {
+  border: 1px solid var(--text-light);
+  color: var(--text-light);
+}

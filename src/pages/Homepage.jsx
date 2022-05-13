@@ -1,8 +1,21 @@
-import { CoverImage, CurrentTime, Quote, UserDetails, Weather } from "../components";
+import {
+  CoverImage,
+  CurrentTime,
+  Quote,
+  Sidebar,
+  Todo,
+  UserDetails,
+  Weather,
+} from "../components";
+import { useSettings } from "../contexts/settings-context";
 
 const Homepage = () => {
+  const {
+    settings: { textColor },
+  } = useSettings();
+
   return (
-    <div>
+    <div className={textColor}>
       <CoverImage />
       <div className="main-container br-m">
         <section className="onboarding-container">
@@ -10,7 +23,9 @@ const Homepage = () => {
           <UserDetails />
         </section>
         <Weather />
+        <Todo />
         <Quote />
+        <Sidebar />
       </div>
     </div>
   );
