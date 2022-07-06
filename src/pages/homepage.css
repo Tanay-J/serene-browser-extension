@@ -15,4 +15,22 @@
   width: 60%;
   text-align: center;
 }
+.download-container {
+  position: fixed;
+  right: 0;
+  margin: 4px;
+  padding: 4px 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: rgb(0, 0, 0, 0.7);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.download-container:hover {
+  background-color: rgb(255, 255, 255, 0.9);
+  color: black;
+  transition: 0.3s;
+}
 
