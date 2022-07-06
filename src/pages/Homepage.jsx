@@ -15,6 +15,7 @@ const Homepage = () => {
     settings: { textColor },
   } = useSettings();
 
+  
   return (
     <div className={textColor}>
       <a
